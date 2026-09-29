@@ -1,1 +1,5 @@
 id,date,question,decision,rationale,status
+DEC-01,2026-09-29,adasind_001320.jpg người lái xe hai bánh có tách riêng box Pedestrian không?,Gộp người lái và xe thành 1 box Bike duy nhất,Theo quy tắc R05 người ngồi lái tính chung trong nhãn Bike,done
+DEC-02,2026-09-29,adasind_014670.jpg xe ô tô cắt biên quang học đặt truncated hay occluded?,Đặt truncated=true và edge_zone=true,Đối tượng bị cắt bởi vòng kính quang học theo R06,done
+DEC-03,2026-09-29,adasind_001320.jpg người đi bộ nhỏ ở xa dưới 40px có gán nhãn không?,Loại bỏ box Pedestrian nhỏ 33px,Theo quy tắc R01 đối tượng dưới ngưỡng 40px không gán nhãn,done
+DEC-04,2026-09-29,Xử lý đối tượng biến dạng cực đại tại ranh giới lens_border và vành đen,Escalate lên AI Team và Data Ops để bổ sung threshold,Vùng biên fisheye bị mờ quang học khó phân biệt biên thật,escalated

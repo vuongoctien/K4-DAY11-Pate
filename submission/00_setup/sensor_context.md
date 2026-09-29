@@ -1,6 +1,5 @@
 # Sensor context
 
-- TODO — Rig: mô tả ngắn xe/camera gắn ở đâu theo hiểu biết của bạn từ ảnh (ADASIND không kèm tài liệu rig chi
-  tiết, ghi theo quan sát).
-- TODO — `ego_body` nhìn thấy ở đâu trong frame (góc capo, gương, tay lái...).
-- TODO — Vòng kính (lens circle) nằm ở vị trí nào trong ảnh, chiếm khoảng bao nhiêu phần khung hình.
+- Rig: Camera fisheye đơn gắn trên phương tiện di chuyển trong bối cảnh giao thông đường bộ thực tế (ADASIND dataset). Theo quan sát từ các frame ảnh, camera được gắn ở vị trí phía trước xe (front-facing camera), tầm cao trung bình ngang nắp capo/kính chắn gió, góc nhìn chúc nhẹ xuống mặt đường để quan sát toàn cảnh các phương tiện lân cận, người đi bộ và làn đường. Do dữ liệu ADASIND không cung cấp thông số calibration nội suy và ngoại suy chi tiết, việc đánh giá hình học dựa trên phần ảnh nhìn thấy trực tiếp.
+- `ego_body`: Thân xe của phương tiện (ego vehicle) xuất hiện ở phần rìa đáy khung hình (mũi capo trước hoặc rìa gương/cản trước). Vùng này bị che khuất cố định bởi chính thân xe nên được loại trừ bằng polygon `ignore_region` với thuộc tính `reason="ego_body"` ở những frame nhìn thấy rõ ràng.
+- Vòng kính (lens circle): Vòng tròn thị trường quang học của thấu kính fisheye nằm ở trung tâm bức ảnh, chiếm khoảng 85-90% diện tích khung hình (tâm và bán kính xác định theo `assets/frames.csv`). Các góc ảnh và rìa ngoài vòng tròn quang học bị tối đen hoặc biến dạng cực đại, được chuẩn hóa bằng hai polygon `ignore_region` với thuộc tính `reason="lens_border"`.

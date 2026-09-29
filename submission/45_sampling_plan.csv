@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,30,Độ phủ các đối tượng chuyển động ngược chiều,Tập trung làn đường chính và phương tiện đối diện ở khoảng cách trung bình
+front,hard,25,Lóa sáng đèn pha ban đêm và ngược sáng mặt trời,Kiểm thử khả năng phát hiện vật cản khi độ tương phản quang học giảm mạnh
+rear,normal,25,Biến dạng góc rộng khi lùi và phương tiện bám đuôi,Đảm bảo khoảng cách an toàn phía sau trong điều kiện ánh sáng chuẩn
+rear,hard,25,Bụi bẩn che ống kính và chùm đèn pha xe phía sau,Đánh giá độ tin cậy của thuật toán lùi đỗ trong môi trường khắc nghiệt
+left,normal,25,Xe máy và xe đạp vượt bên hông ở góc khuất,Phát hiện đối tượng chuyển động nhanh cắt ngang sườn xe
+left,hard,20,Biến dạng quang học cực đại tại vùng rìa gương và bóng râm,Kiểm tra giới hạn nhận diện đối tượng ở vùng edge zone và mép thân xe
+right,normal,25,Người đi bộ bước xuống từ vỉa hè và chướng ngại vật tĩnh,Quan sát điểm mù bên phụ trong tình huống giao thông đô thị
+right,hard,25,Khuất tầm nhìn do hàng rào cây cối và vạch đỗ xe phức tạp,Xử lý che khuất một phần và hỗ trợ tự động đỗ xe

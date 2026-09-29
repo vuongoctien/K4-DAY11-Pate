@@ -1,1 +1,19 @@
 round,slice,frame,object_ref,cell,what,why,severity,owner,rule_id,evidence,action,rules_version,note
+calib,C0,adasind_019560.jpg,L3+R5,LRM,BOX_GEOMETRY,E1_annotator_error,P2,annotator,R02,,keep_with_reason,v1.0,Chênh lệch nhỏ mép box
+calib,C0,adasind_019560.jpg,L4,L_only,SPURIOUS,E1_annotator_error,P1,annotator,R01,,rework,v1.0,Vật dưới ngưỡng H=40
+calib,C0,adasind_019560.jpg,L7,L_only,SPURIOUS,E0_reference_defect,P2,data_ops,R04,,keep_with_reason,v1.0,Vật nhìn rõ nhưng ref thiếu
+r1_craft,B1-edge,adasind_001320.jpg,L7,LM_noR,BOX_GEOMETRY,,P2,annotator,R05,screenshots/evidence_r2_qa_rider.jpg,rework,v1.0,Tự soát nhận thấy Rider cần gộp vào Bike
+r1_craft,B1-edge,adasind_014670.jpg,L1,LRM,ATTRIBUTE,,P2,annotator,R06,screenshots/evidence_edge_truncation.jpg,rework,v1.0,Thiếu thuộc tính truncated do cắt vành kính
+r1_craft,B1-edge,adasind_034080.jpg,L1,LR_noM,BOX_GEOMETRY,,P2,annotator,R02,,keep_with_reason,v1.0,Box sát rìa xe
+r2_qa,B1-edge,adasind_001320.jpg,L8,L_only,WRONG_CLASS,,P1,qa,R05,screenshots/evidence_r2_qa_rider.jpg,rework,v1.0,Tách Rider riêng vi phạm R05
+r2_qa,B1-edge,adasind_014670.jpg,L1,LM_noR,ATTRIBUTE,,P2,qa,R06,screenshots/evidence_edge_truncation.jpg,rework,v1.0,Xe cắt biên lens_border cần truncated=true
+r2_qa,B1-edge,adasind_034080.jpg,L3,LRM,BOX_GEOMETRY,,P2,qa,R02,,keep_with_reason,v1.0,Box người đi bộ bám chuẩn
+r3_diag,B1-edge,adasind_001320.jpg,L2+R3,LRM,BOX_GEOMETRY,E1_annotator_error,P2,annotator,R02,,keep_with_reason,v1.0,Chênh lệch IoU nhỏ ở vùng mid
+r3_diag,B1-edge,adasind_001320.jpg,L7,LM_noR,STRUCTURE,E1_annotator_error,P1,annotator,R05,screenshots/evidence_r2_qa_rider.jpg,rework,v1.0,Thống nhất gộp Rider vào Bike theo R05
+r3_diag,B1-edge,adasind_001320.jpg,M3,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R01,,keep_with_reason,v1.0,Model nhận nhầm bóng cây thành xe
+r3_diag,B1-edge,adasind_001320.jpg,M5,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R01,,keep_with_reason,v1.0,Model phát hiện vật thể quá mờ
+r3_diag,B1-edge,adasind_014670.jpg,L1+M3,LM_noR,ATTRIBUTE,E1_annotator_error,P2,annotator,R06,screenshots/evidence_edge_truncation.jpg,rework,v1.0,Gán thuộc tính truncated=true
+r3_diag,B1-edge,adasind_014670.jpg,M6,RM_noL,MISSING,E1_annotator_error,P1,annotator,R03,,rework,v1.0,Người vẽ bỏ sót xe ba bánh ở giữa ảnh
+r3_diag,B1-edge,adasind_034080.jpg,L1,LRM,BOX_GEOMETRY,E2_guideline_gap,P2,guideline,R06,,escalate,v1.0,Ranh giới cắt biên mờ quang học đề xuất clarify
+r3_diag,B1-edge,adasind_034080.jpg,M7,M_only,SPURIOUS,E4_model_domain,P2,ai_team,R01,,keep_with_reason,v1.0,Model bắt nhầm biển báo
+r3_diag,B1-edge,adasind_034080.jpg,M8,RM_noL,MISSING,E1_annotator_error,P1,annotator,R03,,rework,v1.0,Bổ sung xe bị thiếu theo ref và model
