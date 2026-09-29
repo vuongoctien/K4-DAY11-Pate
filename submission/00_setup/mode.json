@@ -1,0 +1,15 @@
+{
+  "members": [
+    "Tien",
+    "Tu",
+    "Tuyen"
+  ],
+  "assignments": {
+    "Tien": "B2-mid",
+    "Tu": "B1-edge",
+    "Tuyen": "B4-mid"
+  },
+  "self": "Tu",
+  "slice": "B1-edge",
+  "degrade": []
+}
